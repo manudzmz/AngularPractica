@@ -1,6 +1,8 @@
 import { Component, Input } from "@angular/core";
 
 import { Post } from "../../models/post";
+import { AppRoutingModule } from '../../app.routing';
+import { Router } from '@angular/router';}
 
 @Component({
     selector: "posts-list",
@@ -10,6 +12,7 @@ export class PostsListComponent {
 
     @Input() posts: Post[];
 
+     constructor(private _router: Router) {}
     /*------------------------------------------------------------------------------------------------------------------|
      | ~~~ Red Path ~~~                                                                                                 |
      |------------------------------------------------------------------------------------------------------------------|
@@ -26,4 +29,7 @@ export class PostsListComponent {
      | a navegar es '/posts', pasando como parámetro el identificador del post.                                        |
      |-----------------------------------------------------------------------------------------------------------------*/
 
+     irDetallePost(postId) {
+         this._router.navigate([`/posts/${postId}`]);
+     }
 }
