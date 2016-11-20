@@ -2,7 +2,7 @@ import { Component, Input } from "@angular/core";
 
 import { Post } from "../../models/post";
 import { AppRoutingModule } from '../../app.routing';
-import { Router } from '@angular/router';}
+import { Router } from '@angular/router';
 
 @Component({
     selector: "posts-list",
@@ -22,7 +22,7 @@ export class PostsListComponent {
      |------------------------------------------------------------------------------------------------------------------*/
 
     /*-----------------------------------------------------------------------------------------------------------------|
-     | ~~~ Green Path ~~~                                                                                              |
+     | ~~~ Green Path ~~~        HECHO                                                                                 |
      |-----------------------------------------------------------------------------------------------------------------|
      | Maneja el evento del componente PostPreviewComponent que indica la selección de un post y navega a la dirección |
      | correspondiente. Recuerda que para hacer esto necesitas inyectar como dependencia el Router de la app.  La ruta |
