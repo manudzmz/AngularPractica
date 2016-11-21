@@ -28,6 +28,13 @@ export class PostsResolve implements Resolve<Post[]> {
          | Recuerda mirar en los parámetros de la ruta, a ver qué encuentras.                      |
          |-----------------------------------------------------------------------------------------*/
 
-        return this._postService.getPosts();
+        console.log(route.params);
+        console.log(route.params['userId']);
+        if (route.params['userId']) {
+            return this._postService.getUserPosts(route.params['userId']);
+        }
+        else {
+            return this._postService.getPosts();
+        }
     }
 }

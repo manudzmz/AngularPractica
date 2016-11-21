@@ -11,6 +11,7 @@ export class PostPreviewComponent {
 
     @Input() post: Post;
     @Output() detallado: EventEmitter<number> = new EventEmitter();
+    @Output() usuarioSeleccionado: EventEmitter<number> = new EventEmitter();
     
     /*------------------------------------------------------------------------------------------------------------------|
      | ~~~ Red Path ~~~                                                                                                 |
@@ -20,6 +21,11 @@ export class PostPreviewComponent {
      | clic se realiza en el template de este componente, necesitas, además, un manejador para el mismo.                |
      |------------------------------------------------------------------------------------------------------------------*/
     
+    notificarUsuario(usuario: number): void {
+        this.usuarioSeleccionado.emit(usuario);
+    }
+
+
     /*------------------------------------------------------------------------------------------------------------------|
      | ~~~ Green Path ~~~                                                                                               |
      |------------------------------------------------------------------------------------------------------------------|
