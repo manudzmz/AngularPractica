@@ -31,6 +31,7 @@ export class PostDetailsComponent implements OnInit {
      | para hacer esto necesitas inyectar como dependencia el Router de la app. La ruta a navegar es '/posts/users', |
      | pasando como parámetro el identificador del autor.                                                            |
      |---------------------------------------------------------------------------------------------------------------*/
+     
      navegarPostsUsuario(authorId) {
          this._router.navigate([`/posts/users/${authorId}`]);
      }
@@ -43,5 +44,8 @@ export class PostDetailsComponent implements OnInit {
      | para hacer esto necesitas inyectar como dependencia el Router de la app. La ruta a navegar es '/posts/categories', |
      | pasando como parámetro el identificador de la categoría.                                                           |
      |--------------------------------------------------------------------------------------------------------------------*/
-
+    
+     navegarCategoria(categId) {
+         this._router.navigate([`posts/categories/${categId}`]);
+     }
 }
