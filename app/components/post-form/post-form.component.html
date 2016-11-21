@@ -1,49 +1,49 @@
-<!--
-|---------------------------------------------------------------------------------------------|
-| Purple Path                                                                                 |
-|---------------------------------------------------------------------------------------------|
-| Crea una 'template reference variable' del formulario: quizá la necesites. Además, suscribe |
-| el formulario al evento correspondiente para hacer 'submit' del mismo: no olvides pasar la  |
-| referencia del formulario en él.                                                            |
-|---------------------------------------------------------------------------------------------|
--->
-<form novalidate>
-    <!--
-    |-------------------------------------------------------------------------------------------------|
-    | Purple Path                                                                                     |
-    |-------------------------------------------------------------------------------------------------|
-    | El campo 'title' debe enlazarse al formulario a través de la directiva 'ngModel'. Recuerda usar |
-    | el nombre que se ha definido en la entidad Post. Además, este campo debe ser obligatorio.       |
-    |-------------------------------------------------------------------------------------------------|
-    -->
-    <input
-        type="text"
-        placeholder="Título"
-        class="u-full-width">
-    <!--
-    |-------------------------------------------------------------------------------------------------|
-    | Purple Path                                                                                     |
-    |-------------------------------------------------------------------------------------------------|
-    | El campo 'intro' debe enlazarse al formulario a través de la directiva 'ngModel'. Recuerda usar |
-    | el nombre que se ha definido en la entidad Post. Además, este campo debe ser obligatorio.       |
-    |-------------------------------------------------------------------------------------------------|
-    -->
-    <textarea
-        placeholder="Introduce tu historia"
-        class="u-full-width georgia-font"
-        autogrow></textarea>
-    <!--
-    |-------------------------------------------------------------------------------------------------|
-    | Purple Path                                                                                     |
-    |-------------------------------------------------------------------------------------------------|
-    | El campo 'body' debe enlazarse al formulario a través de la directiva 'ngModel'. Recuerda usar  |
-    | el nombre que se ha definido en la entidad Post. Además, este campo debe ser obligatorio.       |
-    |-------------------------------------------------------------------------------------------------|
-    -->
-    <textarea
-        placeholder="Cuenta tu historia"
-        class="u-full-width georgia-font"
-        autogrow></textarea>
+<form #postRef="ngForm" (ngSubmit)="submitPost(postRef)" novalidate>
+    <div>
+        <input
+            type="text"
+            placeholder="Título"
+            class="u-full-width"
+            name="title"
+            ngModel
+            #titleRef="ngModel"
+            required>
+        <div *ngIf="titleRef.touched && titleRef.invalid" class="mensaje-error">
+            <div *ngIf="titleRef.errors.required">
+                Debes poner un título a tu historia.
+            </div>
+        </div>
+    </div>
+    <div>
+        <textarea
+            placeholder="Introduce tu historia"
+            class="u-full-width georgia-font"
+            autogrow
+            name="intro"
+            ngModel
+            #introRef="ngModel"
+            required></textarea>
+        <div *ngIf="introRef.touched && introRef.invalid" class="mensaje-error">
+            <div *ngIf="introRef.errors.required">
+                Es obligatorio hacer una introducción de tu historia.
+            </div>
+        </div>
+    </div>
+    <div>
+        <textarea
+            placeholder="Cuenta tu historia"
+            class="u-full-width georgia-font"
+            autogrow
+            name="body"
+            ngModel
+            #bodyRef="ngModel"
+            required></textarea>
+        <div *ngIf="bodyRef.touched && bodyRef.invalid" class="mensaje-error">
+            <div *ngIf="bodyRef.errors.required">
+                Debes contar tu historia.
+            </div>
+        </div>
+    </div>
     <div>
         <div>
             <label (click)="setScheduling(false)">
@@ -65,13 +65,6 @@
                 [ngModel]="nowDatetimeLocal">
         </div>
     </div>
-    <!--
-    |--------------------------------------------------------------------------|
-    | Purple Path                                                              |
-    |--------------------------------------------------------------------------|
-    | Deshabilita el botón 'Publicar' en caso de que el formulario no sea      |
-    | válido. Para ello vas a necesitar acceder al 'FormGroup' del formulario. |
-    |--------------------------------------------------------------------------|
-    -->
-    <button type="submit" class="button-primary u-pull-right">Publicar</button>
+    <button type="submit" class="button-primary u-pull-right"
+            [disabled]="postRef.invalid">Publicar</button>
 </form>

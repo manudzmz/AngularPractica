@@ -251,6 +251,36 @@
       ],
       "likes": 4,
       "id": 10
+    },
+    {
+      "title": "Historia 1",
+      "intro": "Esta es la historia 1",
+      "body": "sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd ",
+      "publicationDate": 1479729658789,
+      "author": {
+        "id": 1,
+        "name": "KeepCoder",
+        "username": "keepcoder",
+        "email": "keepcoder@postium.com",
+        "avatar": "resources/images/keepcoder.jpg"
+      },
+      "likes": 0,
+      "id": 11
+    },
+    {
+      "title": "Historia 2",
+      "intro": "Esta es la introducción de la historia número 2.",
+      "body": "sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd \n\nsdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd sdklasdklasndasdnasd asdnsdnasdmd lasndas asdlnkasd lasnmd asdnmlasd ",
+      "publicationDate": 1479729780000,
+      "author": {
+        "id": 1,
+        "name": "KeepCoder",
+        "username": "keepcoder",
+        "email": "keepcoder@postium.com",
+        "avatar": "resources/images/keepcoder.jpg"
+      },
+      "likes": 0,
+      "id": 12
     }
   ],
   "categories": [

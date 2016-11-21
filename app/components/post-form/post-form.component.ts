@@ -54,7 +54,7 @@ export class PostFormComponent implements OnInit {
     submitPost(form: FormGroup): void {
 
         /*-------------------------------------------------------------------------------------------------------------|
-         | ~~~ Purple Path ~~~                                                                                         |
+         | ~~~ Purple Path ~~~                         HECHO                                                           |
          |-------------------------------------------------------------------------------------------------------------|
          | Aquí no tienes que hacer nada más allá de comprobar que los datos del formulario se recogen correctamente y |
          | tienen 'forma' de Post. Si no es así, al hacer 'Post.fromJson()' se instanciará un post que no se parece en |

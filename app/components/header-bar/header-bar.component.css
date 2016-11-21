@@ -23,3 +23,7 @@
 .action-link a {
     text-decoration: none;
 }
+
+a:hover {
+    color: #14231d;
+}

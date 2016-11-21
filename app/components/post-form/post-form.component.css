@@ -84,3 +84,8 @@ input[type="datetime-local"] {
     opacity: 0;
     pointer-events: none;
 }
+
+.mensaje-error {
+    color: red;
+    margin-bottom: 20px;
+}
