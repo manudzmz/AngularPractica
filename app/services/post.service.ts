@@ -39,7 +39,7 @@ export class PostService {
     getUserPosts(id: number): Observable<Post[]> {
 
         /*----------------------------------------------------------------------------------------------|
-         | ~~~ Red Path ~~~                                                                             |
+         | ~~~ Red Path ~~~       HECHO                                                                 |
          |----------------------------------------------------------------------------------------------|
          | Ahora mismo, esta función está obteniendo todos los posts existentes, y solo debería obtener |
          | aquellos correspondientes al autor indicado. Añade los parámetros de búsqueda oportunos para |
@@ -64,7 +64,7 @@ export class PostService {
     getCategoryPosts(id: number): Observable<Post[]> {
 
         /*--------------------------------------------------------------------------------------------------|
-         | ~~~ Yellow Path ~~~                                                                              |
+         | ~~~ Yellow Path ~~~      HECHO                                                                   |
          |--------------------------------------------------------------------------------------------------|
          | Ahora mismo, esta función está obteniendo todos los posts existentes, y solo debería obtener     |
          | aquellos correspondientes a la categoría indicada. Añade los parámetros de búsqueda oportunos    |
@@ -89,7 +89,7 @@ export class PostService {
                    .get(`${this._backendUri}/posts?publicationDate_lte=${fecha_actual}&_sort=publicationDate&_order=DESC`)
                    .map((response: Response) => { 
                        let posts = Post.fromJsonToList(response.json()); 
-                       return posts.filter((post: Post) => post.categories.find((category: Category) => category.id == id)); 
+                       return posts.filter((post: Post) => post.categories.find((category: Category) => category.id == id));
                     });
     }
 

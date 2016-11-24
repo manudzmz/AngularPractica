@@ -264,6 +264,7 @@
         "email": "keepcoder@postium.com",
         "avatar": "resources/images/keepcoder.jpg"
       },
+      "categories": [],
       "likes": 0,
       "id": 11
     },
@@ -279,6 +280,7 @@
         "email": "keepcoder@postium.com",
         "avatar": "resources/images/keepcoder.jpg"
       },
+      "categories": [],
       "likes": 0,
       "id": 12
     }
